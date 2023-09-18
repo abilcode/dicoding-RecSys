@@ -1,0 +1,10 @@
+[
+  {
+    "career": "UI/UX",
+    "attribute" :
+    {
+      "desc" : "The UX designer is responsible for ensuring that every aspect of the Beautify experience is smooth and enjoyable for the user.\n\nIs the website easy to navigate? Can customers quickly find what they are looking for? Is the checkout process straightforward?\n\nBased on user research, the UX designer finds out who Beautify’s target customers are, what they need and expect from the Beautify shopping experience, and where their pain-points and frustrations lie. They then use these insights to make smart decisions about how the Beautify website should be laid out and designed.",
+      "task" :["Interviewing Users", ]
+  }
+}
+]

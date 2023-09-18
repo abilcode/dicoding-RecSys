@@ -1,0 +1,50 @@
+[
+  {
+  "career track"   : "front-end developer",
+  "attribute 1"    : "creative",
+  "attribute 2"    : "logical-thinker",
+  "attribute 3"    : "",
+  "special traits" : "",
+  "tech or stack"  : ["frontend","html", "css", "javascript"],
+  },
+  {
+  "career track"    : "back-end developer",
+  "attribute 1"     : "logical-thinker",
+  "attribute 2"     : "analytical",
+  "attribute 3"     : "",
+  "special traits"  : "",
+  "tech or stack"   : ["backend","database", "python", "nodejs"],
+  },
+  {
+  "career track"    : "machine learning / data scientist",
+  "attribute 1"     : "analytical",
+  "attribute 2"     : "data-driven",
+  "attribute 3"     : "",
+  "special traits"  : "mathematical inclined",
+  "tech or stack"   : ["data", "data-science","machine-learning","python"]
+  },
+  {
+  "career track"    : "cloud developer",
+  "attribute 1"     : "logical-thinker",
+  "attribute 2"     : "analytical",
+  "attribute 3"     : "",
+  "special traits"  : "infrastructure",
+  "tech or stack"   : ["cloud", "devops","microservice","architecture"]
+},
+  {
+  "career track"    : "mobile developer",
+  "attribute 1"     : "creative",
+  "attribute 2"     : "user-focused",
+  "attribute 3"     : "",
+  "special traits"  : "tech-savvy",
+  "tech or stack"   : ["mobile","multiplatform","android","ios"]
+},
+  {
+  "career track"    : "ui/ux designer",
+  "attribute 1"     : "creative",
+  "attribute 2"     : "user-focused",
+  "attribute 3"     : "",
+  "special traits"  : "empathetic",
+  "tech or stack"   : ["figma", "research","mockup","wireframe"]
+}
+]

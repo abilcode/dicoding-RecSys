@@ -1,0 +1,64 @@
+
+[
+  {
+    "career": "frontend-engineer",
+    "value": {
+      "creative" : 3,
+      "logical-thinker": 2,
+      "user-focused": 1,
+    }
+  },
+
+  {
+    "career": "backend-engineer",
+    "value": {
+      "analytical" : 3,
+      "logical-thinker": 3,
+    }
+  },
+
+  {
+    "career": "cloud-developer",
+    "value": {
+      "analytical" : 2,
+      "logical-thinker": 2,
+      "infrastructure": 2,
+    }
+  },
+
+  {
+    "career": "machine-learning-engineer/data-scientist",
+    "value": {
+      "analytical" : 2,
+      "data-driven": 2,
+      "mathematical-inclined": 2,
+    }
+  },
+
+  {
+    "career": "machine-learning-engineer/data-scientist",
+    "value": {
+      "analytical" : 2,
+      "data-driven": 2,
+      "mathematical-inclined": 2,
+    }
+  },
+
+  {
+    "career": "ui-ux-designer",
+    "value": {
+      "user-focused" : 2,
+      "creative": 2,
+      "empathetic": 2,
+    }
+  },
+
+  {
+    "career": "mobile-developer",
+    "value": {
+      "user-focused" : 2,
+      "creative": 2,
+      "tech-savvy": 2,
+    }
+  }
+]

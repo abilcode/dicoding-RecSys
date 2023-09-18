@@ -1,0 +1,44 @@
+ {
+    "How would your friends and family be most likely to describe you?": {
+      "I'm often seen as the creative spark in our family, always finding inventive solutions to challenges.": "creative",
+      "Those who know me well would likely describe me as a logical thinker who approaches problems systematically to arrive at effective solutions.": "logical thinker",
+      "I'm often recognized as a critical thinker who relies on evidence and analysis to form opinions and make choices.": "analytical",
+      "Friends and family often describe me as a highly analytical individual who approaches challenges and decisions with a logical and data-driven mindset": "data-driven",
+      "I am often seen as a person who prioritizes the well-being and happiness of those around me, putting their needs first": "user-focused"
+    },
+    "If you had to take a class right now, which would you pick?": {
+      "A creative writing class would be my top pick, allowing me to unleash my imaginative storytelling.": "creative",
+      "I could see myself taking a class in conflict resolution and negotiation, as it involves finding mutually beneficial solutions to disputes.": "logical thinker",
+      "I would choose a class in advanced data analysis and statistical modeling to further enhance my analytical skills and data-driven decision-making abilities.": "analytical",
+      "I'd opt for a class that deepens my understanding of data-driven decision-making in business and helps me apply data insights to adapt to market changes effectively.": "data-driven",
+      "A class in user experience (UX) design would be my top choice, as it aligns with my passion for creating products that cater to users' needs.": "user-focused"
+    },
+    "Which of these tasks appeals to you the most?": {
+      "I'm most interested in tasks that challenge me to think creatively and push the boundaries of what's possible.": "creative",
+      "I'm interested in tasks that challenge me to devise innovative strategies and tactics to overcome obstacles and achieve goals.": "logical thinker",
+      "I enjoy tasks that involve predicting outcomes or trends based on available data, as they allow me to leverage my analytical skills.": "analytical",
+      "I'm interested in tasks that encourage me to use data-driven insights to optimize processes and adapt to changing circumstances.": "data-driven",
+      "I'm most drawn to tasks that involve empathizing with others, understanding their needs, and finding solutions to make their lives better.": "user-focused"
+    },
+    "Imagine you’re starting a small business with some friends. In which area could you see yourself adding the most value?": {
+      "I could see myself adding the most value in branding and creative marketing, crafting a unique identity for our business.": "creative",
+      "I'd contribute the most value by focusing on risk assessment and mitigation, identifying potential pitfalls and developing strategies to overcome them.": "logical thinker",
+      "The area where I could shine the brightest is in optimizing operational processes and resource allocation through rigorous analysis and efficiency improvements.": "analytical",
+      "I could see myself adding the most value in the area of data analysis and market research, providing data-driven insights to guide strategic decisions for our business.": "data-driven",
+      "The area where I could shine the brightest is in user experience (UX) design, where I can create products that cater to users' preferences and make their interactions delightful.": "user-focused"
+    },
+    "Which of the following best describes your ideal day at work?": {
+      "My ideal day at work involves creative brainstorming sessions, collaborating with diverse thinkers, and exploring new ideas.": "creative",
+      "The best workday for me is one filled with opportunities to engage in critical thinking and logical reasoning, applying these skills to various tasks and challenges.": "logical thinker",
+      "I find fulfillment in workdays that require me to generate hypotheses, design research methodologies, and rigorously test theories or assumptions.": "analytical",
+      "I enjoy workdays that involve optimizing processes, whether through automation, efficiency improvements, or data-driven decision-making.": "data-driven",
+      "I find fulfillment in workdays that encourage me to explore user personas and tailor our products or services to meet their specific needs.": "user-focused"
+    },
+   "You’re preparing to launch a brand new  app. What’s most important to you?": {
+      "My ideal day at work involves creative brainstorming sessions, collaborating with diverse thinkers, and exploring new ideas.": "creative",
+      "The best workday for me is one filled with opportunities to engage in critical thinking and logical reasoning, applying these skills to various tasks and challenges.": "logical thinker",
+      "I find fulfillment in workdays that require me to generate hypotheses, design research methodologies, and rigorously test theories or assumptions.": "analytical",
+      "I enjoy workdays that involve optimizing processes, whether through automation, efficiency improvements, or data-driven decision-making.": "data-driven",
+      "I find fulfillment in workdays that encourage me to explore user personas and tailor our products or services to meet their specific needs.": "user-focused"
+    }
+  }

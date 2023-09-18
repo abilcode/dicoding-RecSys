@@ -7,7 +7,7 @@ from collections import Counter
 
 
 
-vector_trait = ["creative", "logical thinker", "analytical", "data-driven", "user-focused"]
+vector_trait = ["creative", "logical thinker", "analytical", "data-driven", "user-focused", "tech-savvy"]
 vector_value = [0 for i in range(10)]
 
 question     = pd.read_json("../data/questions.json")

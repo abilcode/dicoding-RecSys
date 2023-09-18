@@ -11,8 +11,16 @@ vector_trait = ["creative", "logical thinker", "analytical", "data-driven", "use
 vector_value = [0 for i in range(10)]
 
 question     = pd.read_json("../data/questions.json")
+
 with open('../data/answer.json') as f:
    answer = json.load(f)
+
+with open('../data/career_attribute.json') as f:
+   career_attribute = json.load(f)
+
+print(career_attribute)
+
+
 
 cont = []
 for q in question["question"]:

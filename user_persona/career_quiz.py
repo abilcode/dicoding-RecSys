@@ -13,9 +13,9 @@ def cosine_sim(a,b):
     """
     return np.dot(a,b)/np.sqrt(np.dot(a,a)*np.dot(b,b))
 
-vector_trait = ["creative", "logical-thinker", "analytical",
-                "data-driven", "user-focused", "mathematical-inclined",
-                "tech-savvy", "empathetic", "infrastructure"]
+vector_trait = ["creative", "logical-thinker",
+                "analytical","data-driven","user-focused",
+                "tech-savvy", "empathetic", "infrastructure", "mathematically-inclined"]
 
 vector_value = [0 for i in range(len(vector_trait))]
 
@@ -27,7 +27,7 @@ with open('../data/answer.json') as f:
 with open('../data/career_attribute.json') as f:
    career_attribute = json.load(f)
 
-print(career_attribute)
+#print(career_attribute)
 
 # Initialize an empty result array
 career_track_vectorized = []
@@ -48,7 +48,7 @@ for entry in career_attribute:
     # Append the tuple (career, career_vector) to the career_track_vectorized array
     career_track_vectorized.append((career, career_vector))
 
-print(career_track_vectorized)
+#print(career_track_vectorized)
 
 cont_of_questions_answered = []
 for q in question["question"]:

@@ -1,5 +1,6 @@
 from model.data_interface.data import *
 from model.inference.training import *
+from surprise import dump
 
 
 data = load_data(data_path="../data/dicoding_user_item_rating.gzip")
@@ -14,9 +15,16 @@ surprise_input = reader_data(data=data_input,
 
 
 print((type(surprise_input)))
-model = model_search(data = surprise_input, cv = 3)
-model.to_csv("../backend/model.csv")
+model_searched = model_search(data = surprise_input, cv = 3)
+print(model_searched)
+model_searched.to_csv("../backend/model.csv")
 
-print(model)
+params = fine_tuned_model(surprise_input, model = "SVD", cv = 5)
+
+print("Attempting to export the model...")
+
+
+algo = SVD(**params.best_params['rmse'])
+dump.dump("../backend/model/model.pkl", algo=algo)
 
 

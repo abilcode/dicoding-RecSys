@@ -61,7 +61,7 @@ def model_search(data, selected_model=None, cv=2, metrics='mae'):
     ).iloc[:,:-1]
 
 
-def model_train(train=True, model_data='results', file_name=None):
+def model_train(train=True, path='results', file_name=None):
     """
     Train and return a selected model based on the saved model data.
 
@@ -80,17 +80,52 @@ def model_train(train=True, model_data='results', file_name=None):
 
     }
 
-    data_path = os.path.join(
-        os.path.dirname(__file__),
-        model_data,
-        file_name
-    )
-
-    result = pd.read_csv(data_path)
+    result = pd.read_csv(path)
     model_used = result.iloc[0, 0]
     model = model_dict[model_used]
 
     return model
+
+
+def fine_tuned_model(data_train, model, cv):
+    from surprise.model_selection import GridSearchCV
+
+    output = []
+    selected_model = BaselineOnly()
+
+    if model == 'SVD':
+        # Define the parameter grid for tuning
+        param_grid = {
+            "n_epochs": [10, 20],
+            "lr_all": [0.002, 0.005],
+            "reg_all": [0.02]
+        }
+
+        gs = GridSearchCV(SVD, param_grid, measures=["rmse", "mae"], refit=True, cv=cv)
+
+        # Fitting GridSearch:
+        gs.fit(data_train)
+
+    elif model == "SVDpp":
+        # Define the parameter grid for tuning
+        param_grid = {
+            'n_epochs': [10, 20, 30],
+            'lr_all': [0.002, 0.005, 0.01],
+            'reg_all': [0.02, 0.1, 0.2]
+        }
+        gs = GridSearchCV(SVDpp, param_grid, measures=["rmse", "mae"], refit=True, cv=cv)
+
+        # Fitting GridSearch:
+        gs.fit(data_train)
+
+    else :
+        selected_model = NormalPredictor()
+
+    print("BEST RMSE: \t", gs.best_score["rmse"])
+    print("BEST MAE: \t", gs.best_score["mae"])
+    print("BEST params: \t", gs.best_params["rmse"])
+
+    return gs
 
 
 def hybrid_recsys(data):

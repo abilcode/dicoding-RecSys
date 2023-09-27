@@ -1,7 +1,8 @@
 *pkl
+*pickle
+.idea
 
 data/*gzip
 data/cold start
 data/cluster
 backend/*csv
-.idea 

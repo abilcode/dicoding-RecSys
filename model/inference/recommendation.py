@@ -1,8 +1,7 @@
 from surprise import dump
 import os
 from pprint import pprint as pp
-
-
+2
 def load_model(model_filename):
     print(">> Loading dump")
     from surprise import dump

@@ -31,7 +31,7 @@ print([user for user in testset if user[0]==623699])
 # print(model_searched)
 # print("Loading new model for prediction")
 # model_searched.to_csv("../backend/model.csv")
-
+#
 # params = fine_tuned_model(surprise_input, model="SVD", cv=3)
 # print("Attempting to export the model...")
 # print(params.best_params['rmse'])
@@ -43,7 +43,7 @@ print([user for user in testset if user[0]==623699])
 model_filename = "../backend/model/model.pickle"
 model = load_model(model_filename)
 
-pred = model.test([i for i in testset if i[0]==623699])
+pred = model.test([i for i in testset if i[0] == 623699])
 
 top_n = get_top_n(pred, n=10)
 top_n = list(top_n.items())[0]

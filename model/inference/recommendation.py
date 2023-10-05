@@ -2,6 +2,7 @@ from surprise import dump
 import os
 from collections import defaultdict
 
+
 def load_model(model_filename):
     print(">> Loading dump")
     file_name = os.path.expanduser(model_filename)
@@ -12,7 +13,7 @@ def load_model(model_filename):
 
 def surprise_split_train_test(surprise_data):
     trainset = surprise_data.build_full_trainset()
-    testset = trainset.build_anti_testset()
+    testset  = trainset.build_anti_testset()
 
     return trainset, testset
 
@@ -82,6 +83,18 @@ def precision_recall_at_k(predictions, k=10, threshold=3.5):
         recalls[uid] = n_rel_and_rec_k / n_rel if n_rel != 0 else 0
 
     return precisions, recalls
+
+
+# def give_recommendation(model, not_seen_item, n_predict):
+#     prediction = model.test(not_seen_item)
+#
+#     top_n = get_top_n(prediction, n = n_predict)
+#     top_n = list(top_n.items())[0]
+#
+#     item_predict   = [i[0] for i in top_n[1]]
+#     rating_predict = [i[1] for i in top_n[1]]
+#
+#     return item_predict, rating_predict
 
 
 def item_rating(model, user, item, verbose = False):
